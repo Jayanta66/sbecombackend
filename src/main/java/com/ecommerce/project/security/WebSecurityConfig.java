@@ -86,6 +86,9 @@ public class WebSecurityConfig {
                                 .requestMatchers("/swagger-ui/**").permitAll()
                                 .requestMatchers("/api/test/**").permitAll()
                                 .requestMatchers("/images/**").permitAll()
+                                .requestMatchers("https://jayanta66.github.io/**").permitAll()
+                                .requestMatchers("https://sbecombackend-production.up.railway.app/**").permitAll()
+
                                 .anyRequest().authenticated()
                 );
 
