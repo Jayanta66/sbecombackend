@@ -92,6 +92,7 @@ public class WebSecurityConfig {
                                 .requestMatchers("https://jayanta66.github.io/ecom/**").permitAll()
                                 .requestMatchers("https://jayanta66.github.io/**").permitAll()
                                 .requestMatchers("https://jayanta66.github.io").permitAll()
+                                .requestMatchers("https://jayanta66.github.io/ce**").permitAll()
                                 .anyRequest().authenticated()
                 );
 
