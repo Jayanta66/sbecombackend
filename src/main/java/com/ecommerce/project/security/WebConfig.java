@@ -16,7 +16,8 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 //.allowedOrigins("185.199.108.153","http://localhost:3000","https://jayanta66.github.io/**","https://jayanta66.github.io/ce","https://jayanta66.github.io/ce/**", "https://sbecombackend-production.up.railway.app/**",frontEndUrl)
                 .allowedOrigins("*")
-                .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
+             // .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
+                .allowedMethods("*")
                 .allowedHeaders("*")
                 .allowCredentials(true);
     }

@@ -93,6 +93,9 @@ public class WebSecurityConfig {
                                 .requestMatchers("https://jayanta66.github.io/**").permitAll()
                                 .requestMatchers("https://jayanta66.github.io").permitAll()
                                 .requestMatchers("https://jayanta66.github.io/ce**").permitAll()
+                                .requestMatchers("https://luminous-gelato-af6d4d.netlify.app").permitAll()
+                                .requestMatchers("https://luminous-gelato-af6d4d.netlify.app/**").permitAll()
+
                                 .anyRequest().authenticated()
                 );
 
@@ -116,6 +119,8 @@ public class WebSecurityConfig {
                 "https://jayanta66.github.io/",
                 "https://jayanta66.github.io/ecom",
                 "https://jayanta66.github.io/ecom/**",
+                "https://luminous-gelato-af6d4d.netlify.app",
+                "https://luminous-gelato-af6d4d.netlify.app/**",
                 "/webjars/**"));
     }
 
